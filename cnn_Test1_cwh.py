@@ -118,7 +118,7 @@ def cnn_model(img_h, img_w, n_channels,):
 
 if __name__ == '__main__':
     tf.compat.v1.disable_eager_execution()
-    path = r'E:/data/images/train'
+    path = r'E:/data/images/train'  #文件的地址
     image_list, label_list = get_files(path)
     X_train, X_test, Y_train, Y_test = deal_img(image_list)  #处理图片
     print(type(X_train), X_train.shape)
